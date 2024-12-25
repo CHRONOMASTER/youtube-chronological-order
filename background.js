@@ -19,7 +19,7 @@ chrome.runtime.onInstalled.addListener(function() {
 const urlPrerfix = 'https://www.'
 const YOUTUBE_VIDEO_URL_START = urlPrerfix + youtubeVideoWatchPageUrl	//a youtube url WITHOUT the videoID
 const regexToExtractVideoId = /youtube.com\/watch\?v=([^&\?]*)/i		//case insensitive regular expression matches youtube.com/watch?v=[VIDEO_ID]	& captures the video ID since the ID is either the end of the string or ends at a question mark or ampersand
-const MAGIC_URL_POSTFIX = '&list=ULcxqQ59vzyTk'		//thing to append to make it play chronologically
+const MAGIC_URL_POSTFIX = '&list=UL00000000000'		//thing to append to make it play chronologically
 
 //Run code on page action instead of popup
 chrome.action.onClicked.addListener(tab=>{
